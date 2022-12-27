@@ -7,12 +7,19 @@ ul {
 }
 
 li {
-
+    float: right;
 }
 
 li a {
     display: block;
     text-align: center;
+
+    color: #ffff;
+    text-decoration: none;
     
+}
+
+li a:hover {
+    background-color: #E2EAEA;
 }
 
