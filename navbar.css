@@ -1,9 +1,36 @@
-ul {
+nav {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  font: 120% system-ui;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--matte-cream);
+  font-weight: 500;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+a:active {
+  font-weight: 900;
+}
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #C4E3E5;
+    background-color: var(--matte-cream);
+
+    
+    background-color: black;
   }
   
 li {
@@ -12,12 +39,15 @@ li {
   
 li a {
     display: block;
-    color: white;
+    color: var(--coral-peach);
     text-align: center;
-    padding: 14px 16px;
+    font-size: 20px;
+    padding: 20px 20px;
     text-decoration: none;
   }
   
 li a:hover {
-    background-color: #E2EAEA;
+    font-weight: bold;
+    
   }
+*/

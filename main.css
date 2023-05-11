@@ -1,10 +1,72 @@
 @import "navbar.css";
+@import "tictactoe.css";
+
+:root {
+    /* main color pallete */
+    --matte-cream: #e1dfd1;
+    --mellow-yellow: #f9d461;
+    --coral-peach: #ff917a;
+}
 
 body {
-    font-family: 'Trebuchet MS';
-
+    font-family: 'Gill Sans';
+    color: white;
     padding: 0;
     margin: 0;
     overflow: visible;
 
+    background-color: black;
+
 }
+
+.name-intro {
+    /* padding-left: 15%;
+    padding-right: 15%; */
+
+    padding: 5%;
+    
+    
+    text-align: center;
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+.intro-text {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10%;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+.proj-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    /* grid-template-rows: repeat(2, minmax(0, 1fr)); */
+
+    text-align: center;
+    font-size: 50px;
+    /* padding: 2rem 1rem; */
+    /* padding: 5%; */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+
+.proj-title-container {
+    border: 3px solid white;
+    padding: 20%;
+}
+
+.proj-text {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.proj-text:hover {
+    font-weight: 600;
+}
+
