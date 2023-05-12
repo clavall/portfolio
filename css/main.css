@@ -1,22 +1,37 @@
 @import "navbar.css";
 @import "tictactoe.css";
 
+/* Variables */
 :root {
     /* main color pallete */
     --matte-cream: #e1dfd1;
     --mellow-yellow: #f9d461;
     --coral-peach: #ff917a;
+
+    --light-coral: #ff907ac0;
+    --light-yellow: #f9d361c8;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Gill Sans';
-    color: white;
+    /* font-family: 'Gill Sans'; */
+    font-family: Georgia, serif;
+    /* color: white; */
+    color: black;
     padding: 0;
     margin: 0;
     overflow: visible;
-
-    background-color: black;
-
+    background-color: var(--matte-cream);
+    /* background-color: black; */
 }
 
 .name-intro {
@@ -24,7 +39,6 @@ body {
     padding-right: 15%; */
 
     padding: 5%;
-    
     
     text-align: center;
     font-size: 150px;
@@ -57,13 +71,19 @@ body {
 
 .proj-title-container {
     border: 3px solid white;
-    padding: 20%;
+    /* padding: 20%; */
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 35%;
+
 }
 
 .proj-text {
   text-decoration: none;
   color: white;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-size: 50px;
+
 }
 
 .proj-text:hover {

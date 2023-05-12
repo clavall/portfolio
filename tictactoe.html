@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-
-        <link rel="stylesheet" href="main.css">
-        <script src="tictactoe.js"></script>
-
         <meta charset="UTF-8">
         <meta name="author" content="Claire LaValley">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Projects-Tic Tac Toe</title>
+
+        <!-- CSS Style Sheets -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>Projects > Tic-Tac-Toe</title>
     </head>
     <body>
-        <nav>
+        <!-- <nav>
             <a href="index.html">HOME</a>
             <a href="projects.html">PROJECTS</a>
             <a>RESUME</a>
+        </nav> -->
+        <nav>
+            <h1>Claire LaValley</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a>RESUME</a></li>
+            </ul>
         </nav>
- 
-        <button>Test</button>
+        <div class="board-container" id="boardContainer">
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+            <div class="box" data-box></div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <div data-winning-message-text></div>
+            <button id="restartButton">Restart</button>
+        </div>
+        <script src="js/tictactoe.js"></script>
     </body>
 </html>

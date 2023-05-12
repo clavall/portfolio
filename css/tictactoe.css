@@ -1,0 +1,129 @@
+:root {
+	--box-size: 150px;
+	--mark-size: calc(var(--box-size) * .9);
+}
+  
+body {
+	margin: 0;
+}
+  
+.board-container {
+	height: 80vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto)
+}
+  
+.box {
+	width: 150px;
+	height: 150px;
+	/* border: 1px solid black; */
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.box.X::before,
+.box.X::after {
+	background-color: var(--coral-peach);
+}
+
+.box.O::before,
+.box.O::after {
+	background-color: var(--mellow-yellow);
+}
+
+.board-container.X .box:not(.X):not(.O):hover::before,
+.board-container.X .box:not(.X):not(.O):hover::after {
+	background-color: var(--light-coral);
+}
+
+.board-container.O .box:not(.X):not(.O):hover::before,
+.board-container.O .box:not(.X):not(.O):hover::after {
+
+	background-color: var(--light-yellow);
+}
+
+.box.X::before,
+.box.X::after,
+.board-container.X .box:not(.X):not(.O):hover::before,
+.board-container.X .box:not(.X):not(.O):hover::after {
+	content: '';
+	position: absolute;
+	width: calc(var(--mark-size) * .15);
+	height: var(--mark-size);
+}
+
+.box.X::before,
+.board-container.X .box:not(.X):not(.O):hover::before {
+	transform: rotate(45deg);
+}
+
+.box.X::after,
+.board-container.X .box:not(.X):not(.O):hover::after {
+	transform: rotate(-45deg);
+}
+
+.box.O::before,
+.box.O::after,
+.board-container.O .box:not(.X):not(.O):hover::before,
+.board-container.O .box:not(.X):not(.O):hover::after {
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+}
+
+.box.O::before,
+.board-container.O .box:not(.X):not(.O):hover::before {
+	width: var(--mark-size);
+	height: var(--mark-size);
+}
+
+.box.O::after,
+.board-container.O .box:not(.X):not(.O):hover::after {
+	width: calc(var(--mark-size) * .7);
+	height: calc(var(--mark-size) * .7); 
+	background-color: black;
+}
+
+.winning-message {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .9);
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5rem;
+	flex-direction: column;
+}
+
+.winning-message button {
+	font-size: 3rem;
+	background-color: white;
+	border: 1px solid white;
+	padding: .25em .5em;
+	cursor: pointer;
+
+	border-radius: 8px;
+    font-family: Georgia, serif;
+}
+
+.winning-message button:hover {
+	/* background-color: var(--light-coral); */
+	background-color: lightcoral;
+	color: white;
+}
+
+.winning-message.show {
+	display: flex;
+}
