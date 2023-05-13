@@ -1,11 +1,18 @@
 :root {
 	--box-size: 150px;
 	--mark-size: calc(var(--box-size) * .9);
+
+	--blackcurrant: #312b3f;
+    --chetwode-blue: #7e8ae1;
+
+	--light-black:#312b3fb5;
+    --light-blue: #7e89e197;
 }
   
-body {
+/* body {
 	margin: 0;
-}
+	
+} */
   
 .board-container {
 	height: 80vh;
@@ -14,14 +21,14 @@ body {
 	align-content: center;
 	justify-items: center;
 	align-items: center;
-	grid-template-columns: repeat(3, auto)
+	grid-template-columns: repeat(3, auto);
+	
 }
   
 .box {
 	width: 150px;
 	height: 150px;
-	/* border: 1px solid black; */
-	border: 1px solid white;
+	border: 3px solid var(--pipi);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,23 +38,23 @@ body {
 
 .box.X::before,
 .box.X::after {
-	background-color: var(--coral-peach);
+	background-color: var(--blackcurrant);
 }
 
 .box.O::before,
 .box.O::after {
-	background-color: var(--mellow-yellow);
+	background-color: var(--chetwode-blue);
 }
 
 .board-container.X .box:not(.X):not(.O):hover::before,
 .board-container.X .box:not(.X):not(.O):hover::after {
-	background-color: var(--light-coral);
+	background-color: var(--light-black);
 }
 
 .board-container.O .box:not(.X):not(.O):hover::before,
 .board-container.O .box:not(.X):not(.O):hover::after {
 
-	background-color: var(--light-yellow);
+	background-color: var(--light-blue);
 }
 
 .box.X::before,
@@ -89,7 +96,7 @@ body {
 .board-container.O .box:not(.X):not(.O):hover::after {
 	width: calc(var(--mark-size) * .7);
 	height: calc(var(--mark-size) * .7); 
-	background-color: black;
+	background-color: var(--spindle);
 }
 
 .winning-message {
@@ -99,29 +106,32 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, .9);
+	/* background-color: #555488b5; */
+	background-color: #fef5c9a3;
+	
 	justify-content: center;
 	align-items: center;
-	color: white;
+	color: var(--butterfly-bush);
 	font-size: 5rem;
 	flex-direction: column;
 }
 
 .winning-message button {
 	font-size: 3rem;
-	background-color: white;
-	border: 1px solid white;
+	background-color: var(--butterfly-bush);
+	border: 1px solid var(--pipi);
 	padding: .25em .5em;
 	cursor: pointer;
 
 	border-radius: 8px;
     font-family: Georgia, serif;
+	color: var(--pipi);
 }
 
 .winning-message button:hover {
 	/* background-color: var(--light-coral); */
-	background-color: lightcoral;
-	color: white;
+	background-color: var(--spindle);
+	color: var(--pipi);
 }
 
 .winning-message.show {

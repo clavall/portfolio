@@ -10,10 +10,21 @@
 
     --light-coral: #ff907ac0;
     --light-yellow: #f9d361c8;
+
+    /* New Color Palatte */
+    --spindle: #A4B5E2;
+    --pipi: #FEF5C9;
+    --butterfly-bush: #555488;
+
+
+
+
+  
+    
 }
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 * {
@@ -23,15 +34,14 @@ html {
 }
 
 body {
-    /* font-family: 'Gill Sans'; */
     font-family: Georgia, serif;
-    /* color: white; */
-    color: black;
+    color: var(--pipi);
+
     padding: 0;
     margin: 0;
     overflow: visible;
-    background-color: var(--matte-cream);
-    /* background-color: black; */
+    background-color: var(--spindle);
+
 }
 
 .name-intro {
@@ -70,7 +80,7 @@ body {
 }
 
 .proj-title-container {
-    border: 3px solid white;
+    border: 8px solid var(--pipi);
     /* padding: 20%; */
     padding-left: 15%;
     padding-right: 15%;
@@ -80,13 +90,14 @@ body {
 
 .proj-text {
   text-decoration: none;
-  color: white;
-  /* font-weight: 500; */
+  color: var(--pipi);
+  font-weight: 500;
   font-size: 50px;
 
 }
 
 .proj-text:hover {
     font-weight: 600;
+    color: var(--pipi);
 }
 
