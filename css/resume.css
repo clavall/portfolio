@@ -1,0 +1,131 @@
+.resume-container {
+    font-family: var(--resume-font);
+    color: var(--onyx);
+    padding: 0.5rem 5rem 0.5rem 5rem;
+
+    /* display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 2fr; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-pane {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    flex-basis: 20rem;
+    flex-grow: 1;
+
+    padding: 0.65rem 2rem 0.65rem 2rem;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* .info-pane img {
+    width: 50rem;
+    height: 25rem;
+    align-self: center;
+} */
+
+.info-pane h1 {
+    font-size: 5rem;
+    font-weight: 700;
+
+    padding: 1rem 0 0 0;
+}
+
+/* .info-pane h2 {
+    font-size: 15px;
+} */
+
+.info-pane hr {
+    color: var(--onyx);
+    border: 0.2px solid var(--onyx);
+}
+
+.contact-subheader {
+    padding: 0.5rem 0 0 0;
+}
+
+.contact-subheader img {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    object-fit: cover;
+    object-position: center left;
+
+    position: relative;
+    top: 10px;
+
+
+    /* padding: 1rem 0.4rem 0 0; */
+}
+
+.contact-subheader h2{
+    font-size: 1.5rem;
+
+    /* padding-bottom: 3rem; */
+}
+
+.subsection {
+    padding: 1rem 0 1rem 0;
+}
+
+.subsection h2 {
+    font-size: 2.1rem;
+}
+
+.subsection img {
+    width: 2rem;
+    height: 2rem;
+
+    object-fit: cover;
+    object-position: center left;
+
+    position: relative;
+    top: 10px;
+}
+
+.subsection p {
+    font-size: 1.6rem;
+}
+
+
+
+.experiences-pane {
+    /* ↓ Grow from nothing */
+    flex-basis: 0;
+    flex-grow: 999;
+    /* ↓ Wrap when the elements are of equal width */
+    min-inline-size: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 1.2rem;
+}
+
+.section {
+    padding: 1rem 2rem 1rem 2rem;
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.section p {
+    padding: 0 0 0 1rem;
+    font-size: 1.27rem;
+}
+
+.section hr {
+    color: var(--onyx);
+    border: 0.2px solid var(--onyx);
+}
+
+.title-and-year {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 0.2rem 0 0 0;
+}

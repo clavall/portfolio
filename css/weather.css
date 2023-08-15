@@ -1,0 +1,18 @@
+.weatherHeaderContainer {
+    /* color: var(--pipi);
+    background-color: var(--spindle); */
+
+
+  
+    border: 1px solid aqua;
+    text-align: center;
+    margin: auto;
+   
+    padding-top: 4rem;
+    
+}
+
+.weatherHeader {
+    font-size: 60px;
+    font-weight: bold;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Claire LaValley">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- CSS Style Sheets -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>Contact Me</title>
+    </head>
+    <body>
+        <nav>
+            <h1>CLAIRE LAVALLEY</h1>
+            <ul class="navContainer">
+                <li class="navItem"><a href="index.html">HOME</a></li>
+                <li class="navItem"><a href="projects.html">PROJECTS</a></li>
+                <li class="navItem"><a href="resume.html">RESUME</a></li>
+                <li class="navItem"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="contact-form-container">
+            <div class="contact-welcome">
+                Let's Get In Touch!
+            </div>
+            <div class="contact-form">
+            <form action="https://formspree.io/f/xgejovol" method="POST">
+                <div class="contact-form-input">
+                    <label>Fist Name:</label>
+                    <input 
+                        type="text" 
+                        id="fistname" 
+                        name="firstname" 
+                        
+                        required
+                    >
+                </div>
+                <div class="contact-form-input">
+                    <label>Last Name:</label>
+                    <input 
+                        type="text" 
+                        id="lastname" 
+                        name="lastname" 
+                        required
+                    >
+                </div>
+                <div class="contact-form-input">
+                    <label>Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                    >
+                </div>
+                <div class="contact-form-input">
+                    <label>Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="contact-form-submit">Send</button>
+            </form>  
+            </div>  
+        </div>
+    </body>
+</html>
