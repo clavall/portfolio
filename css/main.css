@@ -9,21 +9,7 @@
     --font-family: Segoe UI, Frutiger, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
     --resume-font: 'Baskerville';
 
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #373E40;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
-
     --seasalt: #F6F6F6;
-
     --white: #ffffffff;
     --onyx: #373e40ff;
     --electric-indigo: #5d18ebff;
@@ -32,84 +18,8 @@
     --pink-lavender: #efc3f5ff;
     --silver: #B3B0AA;
 
-    --white: #ffffffff;
-    --onyx: #373e40ff;
-    --reseda-green: #878e76ff;
-    --blue-crayola: #2176ffff;
-    --celestial-blue: #33a1fdff;
-
-
-    --van-dyke: #4e3d42ff;
-    --dim-gray: #6d6466ff;
-    --xanthous: #e6af2eff;
-    --carrot-orange: #ea9010ff;
-
-
-    --coquelicot: #fc440fff;
-    --dark-blue: #1f01b9ff;
-    --yellow-green: #b4e33dff;
-    --black-bean: #2a0800ff;
-
-    --delft-blue: #3a405aff;
-    --champagne-pink: #f9dec9ff;
-    --powder-blue: #99b2ddff;
-    --melon: #e9afa3ff;
-    --umber: #685044ff;
-
-    --mauve: #faa6ffff;
-    --royal-purple: #7353baff;
-    --russian-violet: #2f195fff;
-    --rich-black: #0f1020ff;
-    
-
-
-    --outer-space: #4a5859ff;
-    --pale-dogwood: #f4d6ccff;
-    --hunyadi-yellow: #f4b860ff;
-    --bittersweet-shimmer: #c83e4dff;
-
-    --dark-slate-grey: #305252;
-    --slate-grey: #77878B;
-    --onyx: #373E40;
-    --teal: #488286;
-    --light-blue: #B7D5D4;
-
-    --carolina-blue: #74b3ceff;
-    --blue-munsell: #508991ff;
-    --prussian-blue: #172a3aff;
-    --midnight-green: #004346ff;
-    --mint: #09bc8aff;
-
-    /* main color pallete */
-    --matte-cream: #e1dfd1;
-    --mellow-yellow: #f9d461;
-    --coral-peach: #ff917a;
-
-    --light-coral: #d7b5afc0;
-    --light-yellow: #f9d361c8;
-
-    /* New Color Palatte */
-    --spindle: #A4B5E2;
-    --pipi: #FEF5C9;
-    --butterfly-bush: #555488;
-
-    /* Interchangeable Color Palatte */
-    --main-color: #FBE8A6;
-    --accent-color: #f4976C;
-    --text-color: #303C6C;
-
-    --grey-blue: #B4DFE5;
-    --light-blue: #D2FDFF;
-
-    --pastel-orange: #FFA351;
-    --peach: #FFBE7B;
-    --custard: #EED971;
-
-
-
 	--box-size: 150px;
 	--mark-size: calc(var(--box-size) * .9);
-    
 }
 
 html {
@@ -194,17 +104,17 @@ body {
     text-align: center;
     font-size: 50px;
 
-    padding: 2rem 15% 5% 15%;
+    padding: 3% 15% 5% 15%;
 }
 
 .proj-title-container {
-    border: 8px solid var(--primary-color);
+    border: 8px solid var(--onyx);
     padding: 35% 15% 35% 15%;
 }
 
 .proj-text {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--onyx);
   font-weight: 500;
   font-size: 50px;
 
@@ -212,10 +122,19 @@ body {
 
 .proj-text:hover {
     font-weight: 600;
-    color: var(--pipi);
+    text-shadow: 3px 3px 0 var(--mauve);
 }
 
 .proj-image {
-    border: 2px solid hotpink;
+    border: 8px solid var(--onyx);
     text-align: center;
+    /* padding-top: 0.2rem; */
+}
+
+.proj-image img {
+    width: 525px;
+    height: 525px;
+
+    object-fit: cover;
+    
 }

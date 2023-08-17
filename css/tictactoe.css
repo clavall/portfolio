@@ -12,7 +12,7 @@
 .box {
 	width: 150px;
 	height: 150px;
-	border: 3px solid var(--pipi);
+	border: 3px solid var(--onyx);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,23 +22,23 @@
 
 .box.X::before,
 .box.X::after {
-	background-color: var(--blackcurrant);
+	background-color: var(--electric-indigo);
 }
 
 .box.O::before,
 .box.O::after {
-	background-color: var(--chetwode-blue);
+	background-color: var(--ultra-pink);
 }
 
 .board-container.X .box:not(.X):not(.O):hover::before,
 .board-container.X .box:not(.X):not(.O):hover::after {
-	background-color: var(--light-black);
+	background-color: var(--electric-indigo);
 }
 
 .board-container.O .box:not(.X):not(.O):hover::before,
 .board-container.O .box:not(.X):not(.O):hover::after {
 
-	background-color: var(--light-blue);
+	background-color: var(--ultra-pink);
 }
 
 .box.X::before,
@@ -80,7 +80,7 @@
 .board-container.O .box:not(.X):not(.O):hover::after {
 	width: calc(var(--mark-size) * .7);
 	height: calc(var(--mark-size) * .7); 
-	background-color: var(--spindle);
+	background-color: var(--ultra-pink);
 }
 
 .winning-message {
@@ -90,32 +90,40 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/* background-color: #555488b5; */
-	background-color: #fef5c9a3;
+	background-color: var(--seasalt);
 	
 	justify-content: center;
 	align-items: center;
-	color: var(--butterfly-bush);
-	font-size: 5rem;
+
+	
+	
 	flex-direction: column;
+}
+
+.winner-text {
+	padding-bottom: 2rem;
+	color: var(--electric-indigo);
+	text-shadow: 4px 4px 0 var(--ultra-pink);
+
+	font-size: 5rem;
+	font-weight: 600;
 }
 
 .winning-message button {
 	font-size: 3rem;
 	background-color: var(--butterfly-bush);
-	border: 1px solid var(--pipi);
+	border: 2px solid var(--onyx);
 	padding: .25em .5em;
 	cursor: pointer;
 
 	border-radius: 8px;
-    font-family: Georgia, serif;
-	color: var(--pipi);
+	color: var(--onyx);
+
+	box-shadow: 4px 4px 0 var(--silver);
 }
 
 .winning-message button:hover {
-	/* background-color: var(--light-coral); */
-	background-color: var(--spindle);
-	color: var(--pipi);
+	box-shadow: 6px 6px 0 var(--silver);
 }
 
 .winning-message.show {

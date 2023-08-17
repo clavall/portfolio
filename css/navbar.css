@@ -6,14 +6,11 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 2rem 2rem 2rem;
-
-  
-  /* box-shadow: 0 2px 2px var(--text-color); */
-  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 
   overflow: hidden;
   width: 100%;
@@ -21,13 +18,12 @@ nav {
 
 }
 
-/* Name Accent */
 nav h1 {
   font-size: 30px;
   font-style: italic;
   padding: 0.5rem;
 
-  border: 1px solid var(--onyx);
+  border: 1.5px solid var(--onyx);
   border-radius: 5px;
   box-shadow: -5px -5px 1px var(--ultra-pink);
 }
@@ -36,7 +32,6 @@ nav h1 {
   background-color: var(--ultra-pink);
   transform: skewX(45deg);
 }
-
 
 .navContainer {
   list-style-type: none;
@@ -49,8 +44,6 @@ nav h1 {
   border: 1.75px solid var(--onyx);
   border-radius: 5px;
   box-shadow: 2.5px 2.5px 0 var(--silver);
-
-
 }
 
 .navItem:hover {
@@ -60,15 +53,12 @@ nav h1 {
 .navItem a {
   text-decoration: none;
   color: var(--onyx);
-  
-
   font-size: 25px;
   font-weight: 700;
-  padding: 8px;
 
+  padding: 8px;
 }
 
 .navItem a:hover {
   color: var(--ultra-pink);
-  
 }
