@@ -74,3 +74,14 @@
 .contact-form-submit:hover {
     box-shadow: 7px 7px 0 var(--silver);
 }
+
+@media(max-width: 769px) {
+    .contact-form-container {
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .contact-form {
+        width: 25rem;
+    }
+}

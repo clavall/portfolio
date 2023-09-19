@@ -114,3 +114,13 @@
 
     padding: 0.2rem 0 0 0;
 }
+
+@media(max-width: 769px) {
+    .resume-container {
+        padding-top: 10%;
+    }
+
+    /* .contact-form {
+        width: 25rem;
+    } */
+}
