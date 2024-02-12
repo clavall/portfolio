@@ -31,11 +31,38 @@
   object-fit: cover;
 }
 
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 5%;
+  left: 25%;
+  width: 50%;
+  height: 0;
+
+  transition: 0.5 ease;
+  overflow: hidden;
+  
+  background-color: #d3d3d39c;
+  border-radius: 10px;
+}
+
+.overlayText {
+  color: white;
+  font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .galleryItem1 {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 4;
+
+  position: relative;
 }
 
 .galleryItem2 {
@@ -43,6 +70,8 @@
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 4;
+
+  position: relative;
 }
 
 .galleryItem3 {
@@ -50,6 +79,8 @@
   grid-column-end: 10;
   grid-row-start: 1;
   grid-row-end: 4;
+
+  position: relative;
 }
 
 .galleryItem4 {
@@ -57,6 +88,8 @@
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 9;
+
+  position: relative;
 }
 
 .galleryItem5 {
@@ -64,6 +97,8 @@
   grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 7;
+
+  position: relative;
 }
 
 .galleryItem6 {
@@ -71,6 +106,8 @@
   grid-column-end: 10;
   grid-row-start: 4;
   grid-row-end: 9;
+
+  position: relative;
 }
 
 .galleryItem7 {
@@ -78,4 +115,41 @@
   grid-column-end: 7;
   grid-row-start: 7;
   grid-row-end: 10;
+
+  position: relative;
+}
+
+.galleryItem1:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem2:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem3:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem4:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem5:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem6:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
+}
+
+.galleryItem7:hover .overlay {
+  bottom: 5%;
+  height: 3rem;
 }
