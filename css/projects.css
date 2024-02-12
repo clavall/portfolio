@@ -3,7 +3,7 @@
     gap: 1rem;
 
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(1, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr));
 
     text-align: center;
     font-size: 50px;
@@ -12,15 +12,19 @@
 }
 
 .proj-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2% 0 2%;
     border: 8px solid var(--onyx);
-    padding: 35% 15% 35% 15%;
 }
 
 .proj-text {
   text-decoration: none;
   color: var(--onyx);
   font-weight: 500;
-  font-size: 50px;
+  font-size: 3rem;
 
 }
 
@@ -30,23 +34,26 @@
 }
 
 .proj-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border: 8px solid var(--onyx);
-    text-align: center;
 }
 
 .proj-image img {
-    width: 525px;
-    height: 525px;
+    width: 80%;
+    height: 80%;
 
-    object-fit: cover;
-    
+    object-fit: contain;
 }
 
+/* Tablets */
 @media(max-width: 769px) {
 
     .proj-grid {
         grid-template-columns: repeat(1, minmax(0, 1fr));
-        grid-template-rows: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(4, minmax(0, 1fr));
 
         padding-top: 15%;
     }
@@ -55,8 +62,11 @@
         width: 300px;
         height: 300px;
     
-        object-fit: cover;
-        
+        object-fit: cover; 
+    }
+
+    .proj-text {
+        font-size: 2rem;
     }
     
 }
