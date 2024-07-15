@@ -40,3 +40,13 @@ function submitText() {
 
     closePopup(); // Close the popup after submitting
 }
+
+const squares = document.querySelectorAll('.bingo-square');
+
+// Add click event listener to each square
+squares.forEach(square => {
+    square.addEventListener('click', function() {
+        // Change the background color of the clicked tile to blue
+        this.style.backgroundColor = '#B3B0AA';
+    });
+});
