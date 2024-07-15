@@ -1,0 +1,105 @@
+.bingo-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    padding: 3% 7% 3% 7%;
+
+
+    border: 1px solid pink;
+}
+
+.bingo-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 2rem;
+
+    height: 45rem;
+    width: 20rem;
+
+
+    border: 1px solid green;
+}
+
+.overlay {
+    display: none;
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 8; /* Sit behind the popup */
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    gap: 1rem;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--onyx);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+    background-color: var(--seasalt);
+    z-index: 9; /* Sit on top */
+}
+
+.close-btn {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+}
+
+.bingo-board {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    width: 45rem;
+    height: 45rem;
+    border: 5px solid var(--onyx);
+    border-radius: 10px;
+}
+
+.bingo-square {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+    border: 1px solid var(--onyx);
+}
+
+.bingo-gen-btn {
+    background-color: var(--seasalt);
+    border: 2px solid var(--onyx);
+    border-radius: 5px;
+    padding: 1.1rem;
+
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--onyx);
+    box-shadow: 2.5px 2.5px 0 var(--silver);
+}
+
+.bingo-gen-btn:hover {
+    box-shadow: 4px 4px 0 var(--silver);
+    color: var(--ultra-pink);
+  }
+

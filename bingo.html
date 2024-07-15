@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Claire LaValley">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- CSS Style Sheets -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="favicon_io/site.webmanifest">
+
+        <title>Projects | Bingo</title>
+    </head>
+    <body>
+        <nav>
+
+            <h1>CLAIRE LAVALLEY</h1>
+
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
+            <ul class="navContainer">
+                    <li class="navItem"><a href="index.html">HOME</a></li>
+                    <li class="navItem"><a href="projects.html">PROJECTS</a></li>
+                    <li class="navItem"><a href="resume.html">RESUME</a></li>
+                    <li class="navItem"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            
+        </nav>
+
+        <div class="bingo-page">
+            <div class="bingo-controls">
+                <h2>Let's play BINGO!!!</h2>
+                <button class="bingo-gen-btn" onclick="openPopup()">Generate Card</button>
+            </div>
+
+            <!-- Popup -->
+            <div id="inputsPopup" class="popup">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>Enter Your Fields</h2>
+                <input type="text" id="popupInput" placeholder="Type something...">
+                <button onclick="submitText()">Submit</button>
+            </div>
+
+            <!-- BINGO Card -->
+            <div id="bingoBoard" class="bingo-board">
+                <div class="bingo-square">1</div>
+                <div class="bingo-square">2</div>
+                <div class="bingo-square">3</div>
+                <div class="bingo-square">4</div>
+                <div class="bingo-square">5</div>
+
+                <div class="bingo-square">6</div>
+                <div class="bingo-square">7</div>
+                <div class="bingo-square">8</div>
+                <div class="bingo-square">9</div>
+                <div class="bingo-square">10</div>
+
+                <div class="bingo-square">11</div>
+                <div class="bingo-square">12</div>
+                <div class="bingo-square">13</div>
+                <div class="bingo-square">14</div>
+                <div class="bingo-square">15</div>
+
+                <div class="bingo-square">16</div>
+                <div class="bingo-square">17</div>
+                <div class="bingo-square">18</div>
+                <div class="bingo-square">19</div>
+                <div class="bingo-square">20</div>
+
+                <div class="bingo-square">21</div>
+                <div class="bingo-square">22</div>
+                <div class="bingo-square">23</div>
+                <div class="bingo-square">24</div>
+                <div class="bingo-square">25</div>
+            </div>
+
+            <div id="overlay" class="overlay"></div>
+        </div>
+        <script src="js/bingo.js"></script>
+    </body>
+</html>
