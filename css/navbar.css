@@ -27,6 +27,11 @@ nav h1 {
   box-shadow: -5px -5px 1px var(--ultra-pink);
 }
 
+nav h1 a {
+  text-decoration: none;
+  color: var(--onyx);
+}
+
 .navContainer {
   list-style-type: none;
   display: flex;
