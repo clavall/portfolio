@@ -41,12 +41,45 @@ function submitText() {
     closePopup(); // Close the popup after submitting
 }
 
-const squares = document.querySelectorAll('.bingo-square');
+// Function to load tile states from localStorage
+function loadSquareStates() {
+    const squares = document.querySelectorAll('.bingo-square');
+    squares.forEach(square => {
+        const squareId = square.id;
+        const storedColor = localStorage.getItem(squareId);
+        if (storedColor) {
+            square.style.backgroundColor = storedColor;
+        }
+    });
+}
 
-// Add click event listener to each square
-squares.forEach(square => {
-    square.addEventListener('click', function() {
-        // Change the background color of the clicked tile to blue
-        this.style.backgroundColor = '#B3B0AA';
+// Function to save tile state to localStorage
+function saveSquareState(square) {
+    const squareId = square.id;
+    const squareColor = square.style.backgroundColor;
+    localStorage.setItem(squareId, squareColor);
+}
+
+// Initialize tiles and add click event listeners
+document.addEventListener('DOMContentLoaded', () => {
+    loadSquareStates();
+    
+    const squares = document.querySelectorAll('.bingo-square');
+    squares.forEach(square => {
+        square.addEventListener('click', function() {
+            this.style.backgroundColor = '#B3B0AA';
+            saveSquareState(this);
+        });
     });
 });
+
+
+// const squares = document.querySelectorAll('.bingo-square');
+
+// // Add click event listener to each square
+// squares.forEach(square => {
+//     square.addEventListener('click', function() {
+//         // Change the background color of the clicked tile to blue
+//         this.style.backgroundColor = '#B3B0AA';
+//     });
+// });
